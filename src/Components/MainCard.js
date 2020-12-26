@@ -15,8 +15,8 @@ export default function MainCard() {
         <h5>Front-end Planned</h5>
           <MoreHorizIcon />
         </div>
-        <SubCard />
-        <SubCard />
+        <SubCard />  
+       <SubCard />
         <SubCard />
         <SubCard />
         

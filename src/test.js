@@ -1,24 +1,59 @@
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Modal from '@material-ui/core/Modal';
+import Backdrop from '@material-ui/core/Backdrop';
+import Fade from '@material-ui/core/Fade';
 
-import React from 'react'
-import Card from './Components/MainCard';
-import './test.css'
-export default function test() {
-    return (
-<section>
-  <h2>Horizontal Scrolling Cards</h2>
-  <div class="cards-wrapper">
-    <div class="card"><p>Card 1</p></div>
-    <div class="card"><p>Card 2</p></div>
-    <div class="card"><p>Card 3</p></div>
-    <div class="card"><p>Card 4</p></div>
-    <div class="card"><p>Card 5</p></div>
-    <div class="card"><p>Card 6</p></div>
-    <div class="card"><p>Card 7</p></div>
-    <div class="card"><p>Card 9</p></div>
-    <div class="card"><p>Card 9</p></div>
-    <div class="card"><p>Card 10</p></div>
-  </div>
-</section>
+const useStyles = makeStyles((theme) => ({
+  modal: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  paper: {
+    backgroundColor: theme.palette.background.paper,
+    border: '2px solid #000',
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing(2, 4, 3),
+  },
+}));
 
-        )
+export default function TransitionsModal() {
+  const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  return (
+    <div>
+      <button type="button" onClick={handleOpen}>
+        react-transition-group
+      </button>
+      <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        className={classes.modal}
+        open={open}
+        onClose={handleClose}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
+      >
+        <Fade in={open}>
+          <div className={classes.paper}>
+            <h2 id="transition-modal-title">Transition modal</h2>
+            <p id="transition-modal-description">react-transition-group animates me.</p>
+          </div>
+        </Fade>
+      </Modal>
+    </div>
+  );
 }
