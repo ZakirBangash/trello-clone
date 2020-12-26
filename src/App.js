@@ -7,33 +7,33 @@ function App() {
     {
       title: "Front End Planned",
       subCards: [
-        { subCardTitle: "Ist sub card" },
-        { subCardTitle: "welcome to sub card 2" },
-        { subCardTitle: "welcome to sub card 3" },
+        { title: "Ist sub card" },
+        { title: "welcome to sub card 2" },
+        { title: "welcome to sub card 3" },
       ],
     },
     {
       title: "Front end in progress",
       subCards: [
-        { subCardTitle: "Ist sub card" },
-        { subCardTitle: "welcome to sub card 2" },
-        { subCardTitle: "welcome to sub card 3" },
+        { title: "Ist sub card" },
+        { title: "welcome to sub card 2" },
+        { title: "welcome to sub card 3" },
       ],
     },
     {
       title: "Front End completed",
       subCards: [
-        { subCardTitle: "Ist sub card" },
-        { subCardTitle: "welcome to sub card 2" },
-        { subCardTitle: "welcome to sub card 3" },
+        { title: "Ist sub card" },
+        { title: "welcome to sub card 2" },
+        { title: "welcome to sub card 3" },
       ],
     },
     {
       title: "Front End commited to github",
       subCards: [
-        { subCardTitle: "Ist sub card" },
-        { subCardTitle: "welcome to sub card 2" },
-        { subCardTitle: "welcome to sub card 3" },
+        { title: "Ist sub card" },
+        {  title: "welcome to sub card 2" },
+        { title: "welcome to sub card 3" },
       ],
     },
 
@@ -43,12 +43,9 @@ function App() {
   return (
     <div className="app">
       
-      {initialCards.map(({title},index)=>{
-        // <Card title={title}  />
-        console.log(title)
-      
-      
-      })}
+      {initialCards.map((card,index)=>(
+        <Card title={card.title} subCards={card.subCards}/>
+      ))}
       
       {/* <Card />
       <Card />

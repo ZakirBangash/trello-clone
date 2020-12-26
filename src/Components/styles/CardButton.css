@@ -1,0 +1,26 @@
+.cardButton{
+ display: flex !important;
+ justify-content: center !important;
+ margin-bottom: 10px !important;
+ 
+}
+
+
+.MuiButton-root {
+    width: 80% !important;
+}
+
+/* .cardButton__input {
+    width: 0% !important;
+    
+} */
+
+.cardButton__addCard {
+    display: flex !important;
+ justify-content: center !important;
+ margin-bottom: 10px !important;
+ margin-left: 20px !important ;
+    width: 90% !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
