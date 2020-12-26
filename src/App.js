@@ -2,8 +2,8 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-        <h1>Welcome to trello </h1>
+    <div className="app">
+        <h1>Let's start working</h1>
     </div>
   );
 }
