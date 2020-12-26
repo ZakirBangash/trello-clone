@@ -4,20 +4,24 @@ import Card from "@material-ui/core/Card";
 
 import CardContent from "@material-ui/core/CardContent";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
+import SubCard from "./SubCard";
+
 
 export default function MainCard() {
   return (
-    <div className="test">
     <Card className="mainCard">
       <CardContent>
         <div className="mainCard__header">
-        <h4>Front-end Planned</h4>
+        <h5>Front-end Planned</h5>
           <MoreHorizIcon />
         </div>
-         
-      
+        <SubCard />
+        <SubCard />
+        <SubCard />
+        <SubCard />
+        
       </CardContent>
     </Card>
-    </div>
+    
   );
 }

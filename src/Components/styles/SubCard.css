@@ -1,0 +1,16 @@
+.subCard{
+   margin: 7px 0px;
+}
+.subCard__Content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.subCard__pencil{
+    font-size: 15px !important;
+}
+
+.subCard__pencil:hover{
+    cursor: pointer;
+    background-color: #EBECF0;
+}
