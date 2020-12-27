@@ -59,7 +59,9 @@ import reducer from './reducer'
           console.log(user)
          dispatch({
          type: "addUser",
-         payload:user
+         payload:{
+           title:user
+         }
        })
     };
     

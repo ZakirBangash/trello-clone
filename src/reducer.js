@@ -2,8 +2,9 @@ const reducer = (state, action) => {
     
         switch (action.type) {
           case "addUser": {
-            console.log("AddUser of the Sign")
-                return state;
+            console.log(action.type)
+            // return [ ...state,action.payload]
+              return state;
           }
           
           default:
