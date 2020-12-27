@@ -29,7 +29,7 @@ function App() {
         <AddIcon /> Add Another list
      </Button>
     </div>
-    <TransitionsModal list /> 
+   
 
     </div>
   );
