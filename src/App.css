@@ -3,3 +3,10 @@
 
 }
 
+.app__button {
+  /* display: flex; */
+  padding: 0 !important;
+  min-width: 20em;
+  margin: 1em 1em;
+}
+

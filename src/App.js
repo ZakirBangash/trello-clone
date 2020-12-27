@@ -1,52 +1,35 @@
+import React, {
+  useContext,
+  useState
+} from "react";
+
 import "./App.css";
+import AddIcon from "@material-ui/icons/Add";
 import Card from "./Components/MainCard";
 import Test from "./test.js";
+import Button from "@material-ui/core/Button"
+import GlobalContext from "./GlobalState";
+
+
 
 function App() {
-  const initialCards = [
-    {
-      title: "Front End Planned",
-      subCards: [
-        { title: "Ist sub card" },
-        { title: "welcome to sub card 2" },
-        { title: "welcome to sub card 3" },
-      ],
-    },
-    {
-      title: "Front end in progress",
-      subCards: [
-        { title: "Ist sub card" },
-        { title: "welcome to sub card 2" },
-        { title: "welcome to sub card 3" },
-      ],
-    },
-    {
-      title: "Front End completed",
-      subCards: [
-        { title: "Ist sub card" },
-        { title: "welcome to sub card 2" },
-        { title: "welcome to sub card 3" },
-      ],
-    },
-    {
-      title: "Front End commited to github",
-      subCards: [
-        { title: "Ist sub card" },
-        { title: "welcome to sub card 2" },
-        { title: "welcome to sub card 3" },
-      ],
-    },
-  ];
+
+  const { cards } = useContext(GlobalContext);
+  
+  console.log(cards)
 
   return (
     <div className="app">
-      {initialCards.map((card, index) => (
+      {cards.map((card, index) => (
         <Card title={card.title} subCards={card.subCards} />
       ))}
+    <div className="app__button">
+     <Button variant="contained">
+        <AddIcon /> Add Another list
+     </Button>
+    </div>
+  
 
-      {/* <Card />
-      <Card />
-      <Card /> */}
     </div>
   );
 }

@@ -16,9 +16,14 @@ export default function MainCard({ title, subCards }) {
           <MoreHorizIcon />
         </div>
 
-        {subCards.map((subCard) => (
+      
+        {
+        subCards?.map((subCard) => (
           <SubCard title={subCard.title} />
-        ))}
+        ))
+      
+        }
+      
       </CardContent>
       <CardButton />
     </Card>

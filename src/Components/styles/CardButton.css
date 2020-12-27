@@ -10,11 +10,6 @@
     width: 80% !important;
 }
 
-/* .cardButton__input {
-    width: 0% !important;
-    
-} */
-
 .cardButton__addCard {
     display: flex !important;
  justify-content: center !important;
