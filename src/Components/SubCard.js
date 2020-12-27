@@ -4,10 +4,15 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CreateOutlinedIcon from "@material-ui/icons/CreateOutlined";
 import Button from "@material-ui/core/Button"
+import TransitionsModal from '../test'
+
 export default function SubCard({ title }) {
   
   const Test = ()=>{
-    console.log('clicked card')
+  
+    
+     <TransitionsModal list /> 
+    
   }
   
   return (

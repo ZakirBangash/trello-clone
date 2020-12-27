@@ -9,6 +9,7 @@ import Card from "./Components/MainCard";
 import Test from "./test.js";
 import Button from "@material-ui/core/Button"
 import GlobalContext from "./GlobalState";
+import TransitionsModal from './test'
 
 
 
@@ -28,7 +29,7 @@ function App() {
         <AddIcon /> Add Another list
      </Button>
     </div>
-  
+    <TransitionsModal list /> 
 
     </div>
   );
