@@ -1,6 +1,12 @@
 .subCard{
    margin: 7px 0px;
+   cursor: pointer;
 }
+
+.subCard:hover{
+ background-color: #F4F5F7;
+}
+
 .subCard__Content{
     display: flex;
     justify-content: space-between;
