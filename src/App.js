@@ -32,21 +32,18 @@ function App() {
       title: "Front End commited to github",
       subCards: [
         { title: "Ist sub card" },
-        {  title: "welcome to sub card 2" },
+        { title: "welcome to sub card 2" },
         { title: "welcome to sub card 3" },
       ],
     },
-
-
   ];
 
   return (
     <div className="app">
-      
-      {initialCards.map((card,index)=>(
-        <Card title={card.title} subCards={card.subCards}/>
+      {initialCards.map((card, index) => (
+        <Card title={card.title} subCards={card.subCards} />
       ))}
-      
+
       {/* <Card />
       <Card />
       <Card /> */}

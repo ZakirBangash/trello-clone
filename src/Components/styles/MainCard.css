@@ -1,15 +1,14 @@
-.mainCard { 
-    background-color: #EBECF0 !important;
-    padding: 0 !important;
-     min-width: 20em;
-    margin: 1em 1em;
-                  
+.mainCard {
+  background-color: #ebecf0 !important;
+  padding: 0 !important;
+  min-width: 20em;
+  margin: 1em 1em;
 }
 
-.mainCard__header{
-    display: flex;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    justify-content: space-between;
+.mainCard__header {
+  display: flex;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  justify-content: space-between;
 }
